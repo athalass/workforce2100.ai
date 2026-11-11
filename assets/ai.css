@@ -250,3 +250,15 @@ table.t td.r,table.t th.r{text-align:right;font-variant-numeric:tabular-nums}
 @media (max-width:1100px){.flow{grid-template-columns:repeat(3,1fr)}.flow li:nth-child(3):after{display:none}}
 @media (max-width:640px){.flow{grid-template-columns:1fr}.flow li:after{display:none}}
 .basis div{align-content:start}
+
+/* sample switcher */
+.switch{display:inline-flex;gap:4px;margin-top:28px;background:rgba(255,255,255,.08);border-radius:10px;padding:4px;flex-wrap:wrap}
+.switch a{padding:9px 16px;border-radius:7px;color:#C9D3DF;text-decoration:none;font-weight:600;font-size:14.5px}
+.switch a[aria-current]{background:#fff;color:var(--ink)}
+.switch a:hover{color:#fff}.switch a[aria-current]:hover{color:var(--ink)}
+a.offer.pick{text-decoration:none;color:var(--ink)}
+a.offer.pick:hover{border-color:var(--teal)}
+a.offer.pick .more{margin-top:auto;padding-top:12px;font-weight:600;color:var(--teal);font-size:15px}
+a.offer.pick .more:after{content:" →"}
+@media (max-width:960px){.sample{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){table.t{font-size:13.5px}table.t th,table.t td{padding:8px 5px}.panel{padding:20px}}
