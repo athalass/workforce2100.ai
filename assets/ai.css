@@ -345,3 +345,20 @@ table.pbp th{padding:12px 14px}
 .toc2 .tdot{margin-right:6px}
 @media (max-width:760px){.toc2{grid-template-columns:1fr}}
 .toc2 .tt{font-weight:400;display:block}.toc2 .tt .tdot{display:inline-block}
+
+.statgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.statgrid .callout{background:#fff;border:1px solid var(--line);padding:20px}
+.statgrid .n{font-size:34px}
+.scale{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:8px}
+.scale .seg{background:var(--tint);border-radius:6px;padding:10px;text-align:center;font-size:13.5px;font-weight:600;color:var(--ink-3)}
+.scale .seg small{font-weight:400}
+.scale .seg.on{background:#3E6A8E;color:#fff}
+.types3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.types3 h3{font-size:18px;margin-top:4px}
+.steps4{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;counter-reset:s4}
+.steps4 li{counter-increment:s4;background:var(--tint);border-radius:10px;padding:14px;display:grid;gap:4px;font-size:14px;color:var(--ink-2)}
+.steps4 li b:before{content:counter(s4) ". ";color:var(--teal)}
+.steps4 b{color:var(--ink);font-size:15px}
+@media (max-width:860px){.statgrid,.types3{grid-template-columns:1fr}.steps4{grid-template-columns:1fr}.scale{grid-template-columns:repeat(2,1fr)}}
+
+@media (max-width:640px){.switch a{padding:8px 12px;font-size:13.5px}}
