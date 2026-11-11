@@ -262,3 +262,55 @@ a.offer.pick .more{margin-top:auto;padding-top:12px;font-weight:600;color:var(--
 a.offer.pick .more:after{content:" →"}
 @media (max-width:960px){.sample{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:640px){table.t{font-size:13.5px}table.t th,table.t td{padding:8px 5px}.panel{padding:20px}}
+
+/* regional jobs table */
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.jobs{min-width:820px}
+table.jobs td,table.jobs th{padding:11px 14px;vertical-align:middle}
+table.jobs .sub,table.t .sub{font-size:12.5px;color:var(--ink-3);font-weight:400;margin-top:2px}
+.tdot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:1px}
+td.rng,th.rng-h{width:34%}
+th.rng-h span{display:block}
+th.rng-h .axis{display:flex;justify-content:space-between;font-weight:400;text-transform:none;letter-spacing:0;margin-top:4px;position:relative}
+th.rng-h .axis i{font-style:normal;font-size:11.5px}
+th.rng-h .axis i:nth-child(2){position:absolute;left:44.4%;transform:translateX(-50%)}
+.rbar{position:relative;height:16px}
+.rbar .zero{position:absolute;top:-6px;bottom:-6px;width:1px;background:#B9C3CE}
+.rbar .band{position:absolute;top:5px;height:6px;border-radius:3px;opacity:.35}
+.rbar .mid{position:absolute;top:1px;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:#fff;border:3px solid}
+/* curriculum plan */
+.sub-h{font-size:24px;margin-bottom:16px}
+.shifts{margin:0;padding:0;list-style:none;counter-reset:sh;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.shifts li{counter-increment:sh;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.shifts li:before{content:counter(sh);font-family:var(--serif);font-weight:600;color:var(--teal);font-size:22px;display:block;margin-bottom:6px}
+.shifts b{display:block;font-size:15.5px;margin-bottom:6px;line-height:1.3}
+.shifts p{font-size:14px;color:var(--ink-2)}
+.ptabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.ptabs button{font:600 14.5px var(--sans);padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink-2);cursor:pointer}
+.ptabs button[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pt-head{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.pt-head h3{font-size:21px}
+.pt-head .sub{margin:4px 0 0}
+.pt-stats{display:flex;gap:18px}
+.pt-stats div{display:grid;text-align:right}
+.pt-stats b{font-family:var(--serif);font-size:26px;line-height:1}
+.pt-stats span{font-size:12.5px;color:var(--ink-3)}
+.risk{margin:16px 0 18px;padding:12px 14px;background:var(--amber-t);border-radius:8px;font-size:15px;color:#6B4710}
+.tlwm{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.tlwm h4{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--teal)}
+.tlwm p{font-size:14.5px;color:var(--ink-2)}
+table.pbp{min-width:900px}
+table.pbp td{vertical-align:top;font-size:14px;padding:12px 14px}
+table.pbp th{padding:12px 14px}
+.years{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:18px}
+.years h3{font-size:18px;margin:4px 0 10px}
+.years ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14.5px;color:var(--ink-2)}
+.phases{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:3px solid var(--teal)}
+.phases li{padding:18px 18px 0 0;position:relative}
+.phases li:before{content:"";position:absolute;top:-9px;left:0;width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--teal)}
+.phases .when{font-size:13px;font-weight:600;color:var(--teal)}
+.phases h3{font-size:20px;margin:4px 0 6px}
+.phases p{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:1100px){.shifts{grid-template-columns:repeat(2,1fr)}.tlwm{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.years,.phases{grid-template-columns:1fr}.phases{border-top:0;border-left:3px solid var(--teal);padding-left:18px;gap:18px}.phases li{padding:0}.phases li:before{left:-27px;top:2px}}
+@media (max-width:640px){.shifts,.tlwm{grid-template-columns:1fr}.pt-stats{gap:12px}}
