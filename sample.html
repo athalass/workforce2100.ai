@@ -34,7 +34,7 @@
 <div class="wrap">
 <p class="eyebrow">Sample findings · Maryland to 2035</p>
 <h1>What our reports find, and how they read</h1>
-<p class="lede">Excerpts from our Maryland study at three levels: the state, one county, and an institution's programs. Your report follows the same structure for your state, region or college.</p>
+<p class="lede">Excerpts from our Maryland study: the state, how impact differs by place, one county, worker transition paths, and an illustrative college's programs. Your report follows the same structure for your state, region or college.</p>
 </div>
 </section>
 
@@ -54,7 +54,33 @@
 </div>
 </section>
 
-<section class="s alt">
+<section class="s alt" id="place">
+<div class="wrap">
+<div class="s-head">
+<div><p class="eyebrow">Geography</p><h2 style="margin-top:10px">AI does not hit every place the same way</h2></div>
+<p class="lede">The same technology lands differently depending on what a place's jobs are, what they pay, and where its residents commute. That is why we report by state, county and labor market, not just nationally.</p>
+</div>
+<div class="map-grid">
+<div class="tier-defs">
+<div class="tdef"><span class="sw" style="background:var(--teal)"></span><div><h3>What people do</h3><p class="rule">Industry mix sets how much work shrinks.</p><p>Counties with more office, retail and transportation jobs have more workers in declining occupations. Places built on federal, defense, science and health work have fewer.</p></div></div>
+<div class="tdef"><span class="sw" style="background:var(--amber)"></span><div><h3>What work pays</h3><p class="rule">Wages set when AI pays first.</p><p>At today's AI cost, AI pays for the same tasks everywhere. If AI costs rise to $10–20 per hour of work, it pays first where labor costs most: in Maryland, the Washington suburbs, Lexington Park and the Baltimore region, and later the Eastern Shore and Western Maryland.</p></div></div>
+<div class="tdef"><span class="sw" style="background:#3E6A8E"></span><div><h3>Where people commute</h3><p class="rule">Residents and jobs are not the same thing.</p><p>39% of Prince George's residents work outside Maryland. A plan for residents has to follow the labor market they actually work in.</p></div></div>
+</div>
+<div class="panel map-panel">
+<div style="display:grid;gap:2px;font-size:14px;color:var(--ink-3);margin-bottom:14px"><b style="font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600">Share of jobs in declining occupations</b><span>Selected Maryland counties, place of work, 2025–2035</span></div>
+<div class="bars" id="county-share"></div>
+<div class="callouts" style="margin-top:24px">
+<div class="callout"><div class="n">4.8–7.4%</div><div class="l">range across Maryland's 24 jurisdictions</div></div>
+<div class="callout"><div class="n">180 vs 66</div><div class="l">wages at stake, DC vs Mississippi (U.S. = 100)</div></div>
+<div class="callout"><div class="n">121</div><div class="l">Maryland's wages-at-stake index: AI pays here sooner than in most states</div></div>
+</div>
+<p class="fineprint">Counties: the Maryland study (QCEW 2025, OEWS, LODES 2024). Wages at stake: value of the work AI can profitably take on per worker-hour, U.S. = 100, from our national model of all 50 states and DC.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="s">
 <div class="wrap">
 <div class="s-head">
 <div><p class="eyebrow">County level</p><h2 style="margin-top:10px">Anne Arundel County brief</h2></div>
@@ -94,6 +120,43 @@
 </div>
 </section>
 
+<section class="s alt" id="pathways">
+<div class="wrap">
+<div class="s-head">
+<div><p class="eyebrow">Worker transitions</p><h2 style="margin-top:10px">From a shrinking job to a growing one</h2></div>
+<p class="lede">For every shrinking occupation we find the growing occupations whose skills fit best, how far the move is, what it pays, and which local programs, training providers and apprenticeships can carry workers across.</p>
+</div>
+<div class="map-grid">
+<div class="tier-defs">
+<div class="tdef"><span class="sw" style="background:var(--teal)"></span><div><h3>Direct</h3><p class="rule">Most skills carry over; same or higher pay; under 6 months of training.</p><p>A short credential or apprenticeship is enough.</p></div></div>
+<div class="tdef"><span class="sw" style="background:var(--amber)"></span><div><h3>Winding</h3><p class="rule">About half the skills carry over; about 90% of the pay; under 2 years.</p><p>A certificate or associate degree, ideally part-time and stackable.</p></div></div>
+<div class="tdef"><span class="sw" style="background:#3E6A8E"></span><div><h3>Unpaved</h3><p class="rule">Everything else: a longer climb.</p><p>Often a degree, but it can lead to much higher pay.</p></div></div>
+<div class="tdef ai"><span class="sw" style="background:var(--red)"></span><div><h3>The capacity check</h3><p class="rule">A good match only helps if there are jobs to fill.</p><p>We compare the workers headed to each destination with its new jobs, and steer plans toward occupations big enough to absorb them.</p></div></div>
+</div>
+<div class="panel map-panel">
+<div style="display:grid;gap:2px;font-size:14px;color:var(--ink-3);margin-bottom:16px"><b style="font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600">Example pathways in Maryland</b><span>Best-fitting growing occupation for some of the largest losses</span></div>
+<div class="paths">
+<div class="path"><div class="from">Food service supervisors</div><div class="arrow" style="--c:var(--teal)"><span>Direct · 102% of pay</span></div><div class="to">Nursing assistants</div><p class="bridge">Bridges: 34 training-provider programs and an apprenticeship</p></div>
+<div class="path"><div class="from">Receptionists</div><div class="arrow" style="--c:var(--amber)"><span>Winding · 113–118% of pay</span></div><div class="to">Nursing assistants or pharmacy technicians</div><p class="bridge">Bridges: certificates, training providers, a patient care technician apprenticeship</p></div>
+<div class="path"><div class="from">Secretaries and admin assistants</div><div class="arrow" style="--c:var(--amber)"><span>Winding · 93% of pay</span></div><div class="to">Pharmacy technicians</div><p class="bridge">Bridges: community college certificates, training providers, apprenticeship</p></div>
+<div class="path"><div class="from">Bookkeeping and accounting clerks</div><div class="arrow" style="--c:#3E6A8E"><span>Unpaved · 167% of pay</span></div><div class="to">Accountants and auditors</div><p class="bridge">Bridges: accounting certificates and bachelor's programs</p></div>
+</div>
+<div class="cap">
+<p class="rule" style="font-weight:600;margin-bottom:8px">But watch capacity: eight shrinking occupations point to pharmacy technicians</p>
+<div class="bar-row" style="grid-template-columns:170px 1fr 70px"><span>Workers displaced</span><span class="bar-track"><span class="bar-fill" style="left:0;width:100%;background:var(--red)"></span></span><span class="v">36,500</span></div>
+<div class="bar-row" style="grid-template-columns:170px 1fr 70px;margin-top:8px"><span>New pharmacy tech jobs</span><span class="bar-track"><span class="bar-fill" style="left:0;width:3%;background:var(--teal)"></span></span><span class="v">1,100</span></div>
+<p class="fineprint" style="margin-top:10px">33 workers per new job. A workable plan sends most workers to the large growing occupations instead: home health aides (+12,800), nursing assistants (+7,900), registered nurses (+7,500) and construction trades.</p>
+</div>
+</div>
+</div>
+<div class="callouts" style="margin-top:28px">
+<div class="callout"><div class="n">74%</div><div class="l">of Maryland job losses have a local bridge to their best pathway</div></div>
+<div class="callout"><div class="n">62%</div><div class="l">of losses have a best pathway that pays the same or more</div></div>
+<div class="callout"><div class="n">15 / 53 / 32</div><div class="l">percent of losses whose best path is Direct / Winding / Unpaved</div></div>
+</div>
+</div>
+</section>
+
 <section class="s" id="program-map">
 <div class="wrap">
 <div class="s-head">
@@ -106,15 +169,15 @@
 <div class="tdef"><span class="sw" style="background:#3E6A8E"></span><div><h3>Reinvent</h3><p class="rule">Demand changes between −10% and +10%.</p><p>Keep the program, but change what it teaches: directing AI, checking its work, and the human skills AI cannot do.</p></div></div>
 <div class="tdef"><span class="sw" style="background:var(--red)"></span><div><h3>Review</h3><p class="rule">Demand falls more than 10%.</p><p>Re-aim toward growing occupations, merge or wind down, after checking local placement. Programs whose range reaches zero are flagged uncertain.</p></div></div>
 <div class="tdef ai"><span class="sw line" aria-hidden="true"></span><div><h3>The AI line</h3><p class="rule">AI can do half or more of graduates' task time.</p><p>Programs above the dashed line need new curriculum whatever their tier, including growing ones.</p></div></div>
-<p class="howto"><b>How to read the map.</b> Left to right: demand change for graduates. Bottom to top: share of their task time AI can do. Circle size: awards in 2023–24. Hover or tap a circle for details.</p>
+<p class="howto"><b>How to read the map.</b> Left to right: demand change for graduates. Bottom to top: share of their task time AI can do. Circle size: awards per year. Hover or tap a circle for details.</p>
 </div>
 <figure class="panel map-panel">
-<figcaption><b>Example: a mid-size Maryland community college</b><span>32 programs with 9 or more awards, 2023–24. <span id="map-share"></span></span></figcaption>
+<figcaption><b>Example Community College (illustrative)</b><span>26 programs, 1,235 awards a year. <span id="map-share"></span></span></figcaption>
 <div id="program-map-svg"></div>
 <p class="map-tip" id="map-tip" aria-live="polite">Tap a circle to see the program.</p>
 </figure>
 </div>
-<p class="fineprint" style="max-width:90ch">Built from public data only: IPEDS 2023–24 completions, program-to-occupation links, and the Maryland 2035 occupation model. Shown as an example of the report format; it has not been reviewed by the college's departments.</p>
+<p class="fineprint" style="max-width:90ch"><b>Example Community College is not a real institution.</b> It is a composite built from Maryland community college data: program types common across the state, award counts set so its mix matches the statewide community college average (about 60% Invest, 35% Reinvent, 5% Review), and each program's demand change and AI share taken from the Maryland 2035 occupation model. A real report uses your own IPEDS completions.</p>
 </div>
 </section>
 
@@ -175,7 +238,7 @@
 </footer>
 <script>
 (function(){
-var R=[["Business administration",259,.076,.71,"Reinvent",-10,-22,"end"],["Cybersecurity",234,.123,.78,"Invest",-34,-12,"end"],["Nursing (RN)",162,.142,.54,"Invest",14,4,"start"],["Business",92,.083,.69,"Reinvent",-8,20,"end"],["EMT/paramedic",80,.155,.24,"Invest",-16,4,"end"],["Mental health counseling",74,.159,.34,"Invest",12,4,"start"],["Education, other",64,.185,0,"Invest",12,-8,"start"],["Criminal justice",62,.004,.4,"Reinvent",0,26,"middle"],["Culinary arts",61,-.14,.61,"Review",0,-14,"middle"],["Graphic design",53,.15,.77,"Invest",14,-12,"start"],["Communications tech",47,-.032,.64,"Reinvent",0,-12,"middle"],["Networking",47,.145,.76,"Invest",12,14,"start"],["Massage therapy",46,.291,.07,"Invest",-12,4,"end"],["Computer & info sciences",40,.132,.81,"Invest",44,-12,"middle"],["Medical assistant",36,.226,.38,"Invest",12,4,"start"],["Elementary education",34,-.054,.37,"Reinvent",30,28,"end"],["Practical nursing",29,.149,.34,"Invest"],["Paralegal and legal studies",28,.044,.7,"Reinvent"],["Fitness and exercise",27,.134,.16,"Invest"],["Mechatronics",23,.175,.66,"Invest"],["Engineering",21,.175,.66,"Invest"],["Entrepreneurship",19,.084,.72,"Reinvent"],["Homeland security",18,.052,.42,"Reinvent"],["Accounting",18,.072,.78,"Reinvent"],["MIS",14,.099,.78,"Reinvent"],["Forensic science",14,.128,.7,"Invest"],["Health administration",14,.118,.81,"Invest"],["Phlebotomy",14,.197,.26,"Invest"],["Drafting and design",25,.3,.75,"Invest",-4,26,"end"],["Foods and nutrition",12,-.117,.57,"Review",14,24,"end"],["Construction management",10,.097,.64,"Reinvent"],["Child care",9,.017,.31,"Reinvent"]];
+var R=[["Business administration",140,.076,.71,"Reinvent",-14,-16,"end"],["Cybersecurity",115,.123,.78,"Invest",0,30,"middle"],["Nursing (RN)",150,.142,.54,"Invest",18,4,"start"],["Business",55,.083,.69,"Reinvent",-12,16,"end"],["EMT/paramedic",70,.155,.24,"Invest",-14,4,"end"],["Mental health counseling",45,.159,.34,"Invest",12,4,"start"],["Criminal justice",70,.004,.4,"Reinvent",0,24,"middle"],["Culinary arts",50,-.14,.61,"Review",0,-14,"middle"],["Graphic design",35,.15,.77,"Invest"],["Networking",45,.145,.76,"Invest"],["Computer & info sciences",55,.132,.81,"Invest",10,-14,"start"],["Medical assistant",60,.226,.38,"Invest",14,4,"start"],["Elementary education",40,-.054,.37,"Reinvent",-12,4,"end"],["Practical nursing",40,.149,.34,"Invest"],["Paralegal and legal studies",30,.044,.7,"Reinvent"],["Fitness and exercise",20,.134,.16,"Invest"],["Engineering",30,.175,.66,"Invest",12,4,"start"],["Entrepreneurship",15,.084,.72,"Reinvent"],["Accounting",35,.072,.78,"Reinvent"],["MIS",20,.099,.78,"Reinvent"],["Health administration",20,.118,.81,"Invest"],["Phlebotomy",25,.197,.26,"Invest",10,4,"start"],["Drafting and design",15,.3,.75,"Invest",-4,22,"end"],["Foods and nutrition",10,-.117,.57,"Review",14,22,"end"],["Construction management",15,.097,.64,"Reinvent"],["Child care",30,.017,.31,"Reinvent",10,4,"start"]];
 var W=760,H=520,x0=64,x1=744,yA=40,yB=450;
 function sx(d){return x0+(d+.2)/.52*(x1-x0)} function sy(a){return yB-a/.9*(yB-yA)}
 function col(t){return t==="Invest"?"#0E7C66":t==="Review"?"#B5483B":"#3E6A8E"}
@@ -207,6 +270,14 @@ R.slice().sort(function(a,b){return b[1]-a[1]}).forEach(function(r){
 });
 R.forEach(function(r){if(r.length>5)el("text",{x:sx(r[2])+r[5],y:sy(r[3])+r[6],"text-anchor":r[7],class:"lab"},null,r[0])});
 document.getElementById('program-map-svg').appendChild(svg);
+})();
+</script>
+<script>
+(function(){
+var C=[["Queen Anne's",7.4],["Garrett",6.8],["Kent",6.5],["Somerset",6.4],["Baltimore County",5.9],["Howard",5.7],["Anne Arundel",5.6],["Baltimore City",5.5],["Prince George's",5.2],["Montgomery",4.9],["St. Mary's",4.8]];
+var h=document.getElementById('county-share');
+C.forEach(function(c){var d=document.createElement('div');d.className='bar-row';
+d.innerHTML='<span>'+c[0]+'</span><span class="bar-track"><span class="bar-fill" style="left:0;width:'+(c[1]/8*100)+'%;background:'+(c[1]>=6.4?'var(--red)':c[1]<=5.2?'var(--teal)':'#3E6A8E')+'"></span></span><span class="v">'+c[1].toFixed(1)+'%</span>';h.appendChild(d);});
 })();
 </script>
 </body>
