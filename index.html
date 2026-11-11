@@ -22,6 +22,7 @@
 <nav class="nav" aria-label="Main">
 <a href="#reports">Reports</a>
 <a href="#how">How it works</a>
+<a href="#research">Research</a>
 <a href="sample.html">Sample findings</a>
 <a href="#faq">FAQ</a>
 <a class="btn btn-primary" href="#contact">Request a report</a>
@@ -41,16 +42,18 @@
 <a class="btn btn-ghost" href="sample.html">See sample findings</a>
 </div>
 </div>
-<aside class="hero-card" aria-label="Sample result">
-<p class="k">From our Maryland study</p>
-<p class="t">Maryland to 2035</p>
-<div class="stat-row">
-<div><div class="n">155k</div><div class="l">jobs in occupations that shrink (5.7% of today's jobs)</div></div>
-<div><div class="n">+48k</div><div class="l">net jobs gained as care, trades and tech grow</div></div>
-<div><div class="n">77%</div><div class="l">of college completions in programs that need new curriculum</div></div>
-<div><div class="n">$35B</div><div class="l">a year in wages tied to the work hours AI removes</div></div>
+<aside class="hero-card" aria-label="Wages at stake by state">
+<p class="k">Same AI, different places</p>
+<p class="t">Wages at stake, by state</p>
+<div class="hbars">
+<div><span>District of Columbia</span><i style="width:100%"></i><b>180</b></div>
+<div><span>Washington</span><i style="width:79%"></i><b>142</b></div>
+<div><span>Massachusetts</span><i style="width:75%"></i><b>134</b></div>
+<div class="us"><span>U.S. average</span><i style="width:56%"></i><b>100</b></div>
+<div><span>West Virginia</span><i style="width:42%"></i><b>75</b></div>
+<div><span>Mississippi</span><i style="width:37%"></i><b>66</b></div>
 </div>
-<p class="src">703 occupations, 2.72 million jobs, 75 institutions, 24 counties. One scenario; ranges in the full report.</p>
+<p class="src">Value of the work AI can profitably take on, per worker-hour (U.S. = 100). Where labor costs more, AI pays off sooner. Our national model, all 50 states and DC.</p>
 </aside>
 </div>
 </section>
@@ -89,7 +92,7 @@
 <article class="offer">
 <div class="top"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M4 19h16M8 15l4-5 3 3 5-6"/></svg></div><span class="tag">Statewide</span></div>
 <h3>State labor-trends report</h3>
-<p>For state agencies, higher-education commissions and governors' workforce councils. A full state picture to 2035, like our Maryland study.</p>
+<p>For state agencies, higher-education commissions and governors' workforce councils. A full state picture to 2035, for any state.</p>
 <ul>
 <li>All occupations: jobs lost to automation, jobs added by demand, net change</li>
 <li>Where AI pays first at state wages, and the wage dollars at stake</li>
@@ -131,7 +134,32 @@
 </div>
 </section>
 
-<section class="s alt" id="how">
+<section class="s alt" id="local">
+<div class="wrap">
+<div class="s-head">
+<div><p class="eyebrow">Why local</p><h2 style="margin-top:10px">National averages hide the story</h2></div>
+<p class="lede">AI is the same technology everywhere, but each economy absorbs it differently. A plan built on national numbers will be wrong for most places, so every report is built for your state, labor market and institution.</p>
+</div>
+<div class="sample">
+<div class="tier-defs">
+<div class="tdef"><span class="sw" style="background:var(--teal)"></span><div><h3>What people do</h3><p>The local mix of jobs sets how much work shrinks. Office, retail and logistics economies feel it sooner than health, science and public-sector ones.</p></div></div>
+<div class="tdef"><span class="sw" style="background:var(--amber)"></span><div><h3>What work pays</h3><p>Local wages set when AI pays first. The higher the cost of labor, the sooner AI is worth adopting.</p></div></div>
+<div class="tdef"><span class="sw" style="background:#3E6A8E"></span><div><h3>Where people commute</h3><p>Workers cross county and state lines. Plans have to follow the real labor market, not the map.</p></div></div>
+<div class="tdef"><span class="sw" style="background:var(--red)"></span><div><h3>What local programs exist</h3><p>Displaced workers need bridges close to home: local colleges, training providers and apprenticeships.</p></div></div>
+<p><a class="btn btn-outline" href="sample.html">See a full local example</a></p>
+</div>
+<article class="panel">
+<h3>Wages at stake, all 50 states and DC</h3>
+<p class="sub">U.S. = 100. Highest to lowest; hover or tap a bar.</p>
+<div id="state-strip" class="strip" role="img" aria-label="Wages at stake index by state, from 180 in DC to 66 in Mississippi"></div>
+<p class="map-tip" id="strip-tip" aria-live="polite">Highest: District of Columbia, 180. Lowest: Mississippi, 66.</p>
+<p class="fineprint">The same national scenario gives each state a different answer. Our reports go further, to counties, commuting markets and individual programs.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="s" id="how">
 <div class="wrap">
 <div class="s-head">
 <div><p class="eyebrow">How it works</p><h2 style="margin-top:10px">From public data to a plan your board can adopt</h2></div>
@@ -146,40 +174,32 @@
 </div>
 </section>
 
-<section class="s" id="sample">
+<section class="s alt" id="research">
 <div class="wrap">
 <div class="s-head">
-<div><p class="eyebrow">Sample findings</p><h2 style="margin-top:10px">What a report shows</h2></div>
-<p class="lede">Two views from our Maryland work: the state's programs, and one county's jobs. <a href="sample.html">See more sample findings</a>.</p>
+<div><p class="eyebrow">Our method</p><h2 style="margin-top:10px">From tasks to your programs, in six steps</h2></div>
+<p class="lede">Every report runs the same pipeline: we start from the work itself, task by task, and carry the result up to the nation, your state, your county and your programs. Full methods, data and code are at <a href="https://workforce2100.org">workforce2100.org</a>.</p>
 </div>
-<div class="sample">
-<article class="panel">
-<h3>Maryland completions by tier</h3>
-<p class="sub">80,900 completions at 75 institutions, 2023–24</p>
-<div class="tiers" role="img" aria-label="Invest 22 percent, Reinvent 77 percent, Review 1.6 percent">
-<div style="width:22%;background:var(--teal)">22%</div>
-<div style="width:76.4%;background:#3E6A8E">Reinvent 77%</div>
-<div style="width:1.6%;background:var(--red)" title="Review 1.6%"></div>
+<ol class="flow">
+<li><span class="no">01</span><h3>Jobs to tasks and skills</h3><p>830 occupations broken into about 19,000 tasks and skills.</p><span class="src">O*NET</span></li>
+<li><span class="no">02</span><h3>Tasks to AI</h3><p>Each task scored for whether AI can do it, and whether it pays to, at current AI costs and local wages.</p><span class="src">AI exposure and usage research, our cost model</span></li>
+<li><span class="no">03</span><h3>The nation</h3><p>Work AI removes and jobs demand adds, by occupation, to 2035, with ranges.</p><span class="src">BLS employment and wages</span></li>
+<li><span class="no">04</span><h3>States and counties</h3><p>Re-weighted for each state's and county's jobs and wages, then for where residents actually work.</p><span class="src">BLS OEWS and QCEW, Census commuting flows</span></li>
+<li><span class="no">05</span><h3>Your programs</h3><p>Each program linked to the jobs its graduates enter, then tiered Invest, Reinvent or Review.</p><span class="src">IPEDS completions, program-to-occupation crosswalk</span></li>
+<li><span class="no">06</span><h3>Pathways and plans</h3><p>Shrinking jobs matched to growing ones by skills, with local bridges and a roadmap.</p><span class="src">Training providers, apprenticeships</span></li>
+</ol>
+<div class="basis">
+<div><b>Surveys</b><span>Academic leaders' AI fluency, through our <a href="https://workforce2100.org/surveys.html">Fluency Check</a>, and expert review of our assessment add evidence models cannot see.</span></div>
+<div><b>Public data you can check</b><span>O*NET, BLS, Census and IPEDS, with every source credited in each report.</span></div>
+<div><b>Updated every year</b><span>We re-run the pipeline as new federal data are released, so your numbers stay current.</span></div>
 </div>
-<div class="legend"><span><i style="background:var(--teal)"></i>Invest: demand +10% or more</span><span><i style="background:#3E6A8E"></i>Reinvent: −10% to +10%</span><span><i style="background:var(--red)"></i>Review: below −10% (1.6%)</span></div>
-<div class="callouts">
-<div class="callout"><div class="n">85%</div><div class="l">of completions where AI can do half or more of graduates' task time</div></div>
-<div class="callout"><div class="n">0</div><div class="l">bachelor's or graduate programs in Review</div></div>
-<div class="callout"><div class="n">74%</div><div class="l">of job losses with a Maryland bridge program</div></div>
-</div>
-<p class="fineprint">Most programs need new curriculum, not closure. Review programs are all short certificates and associate degrees.</p>
-</article>
-<article class="panel">
-<h3>Anne Arundel County: net change by 2035</h3>
-<p class="sub">Selected occupation groups, place of work</p>
-<div class="bars diverge" id="county-bars"></div>
-<p class="fineprint">The county gains about 5,100 jobs net, but 16,500 jobs (5.6%) sit in declining occupations, mostly office and retail.</p>
-</article>
-</div>
+<p style="margin-top:22px"><a class="btn btn-outline" href="https://workforce2100.org">Full methods and data at workforce2100.org</a></p>
 </div>
 </section>
 
-<section class="s alt">
+
+
+<section class="s">
 <div class="wrap">
 <div class="s-head">
 <div><p class="eyebrow">Who it's for</p><h2 style="margin-top:10px">Built for the people who decide</h2></div>
@@ -192,7 +212,7 @@
 </div>
 </section>
 
-<section class="s" id="faq">
+<section class="s alt" id="faq">
 <div class="wrap">
 <div class="s-head"><div><p class="eyebrow">Questions</p><h2 style="margin-top:10px">Frequently asked</h2></div></div>
 <div class="faq">
@@ -201,7 +221,7 @@
 <details><summary>How certain are the forecasts?</summary><p>They are estimates under one scenario, not predictions. Every report shows ranges, flags programs whose range crosses zero, and lists its limits. We recommend renewing each year as new data arrive.</p></details>
 <details><summary>Do you need our internal data?</summary><p>No. A first report uses public data only. If you share program-level placement or noncredit enrollment, we can add it, and it stays confidential to you.</p></details>
 <details><summary>Can we publish the report?</summary><p>Yes. You decide whether a report stays internal or is shared with your board, partners or the public.</p></details>
-<details><summary>Do you cover states other than Maryland?</summary><p>Yes. The occupation and program model covers all 50 states and the District of Columbia.</p></details>
+<details><summary>Which places do you cover?</summary><p>All 50 states and the District of Columbia, down to counties, commuting markets and individual colleges. Our sample findings use Maryland as a worked example.</p></details>
 </div>
 </div>
 </section>
@@ -249,14 +269,13 @@
 
 <script>
 (function(){
-  var rows=[["Office and admin support",-7700],["Retail and sales",-2900],["Transportation",-1400],["Food service",-1400],["Healthcare support",3100],["Healthcare professionals",2500],["Technology",2400],["Construction",2300]];
-  var max=8000,host=document.getElementById('county-bars');
-  rows.forEach(function(r){
-    var v=r[1],w=Math.abs(v)/max*50,pos=v>0;
-    var el=document.createElement('div');el.className='bar-row';
-    el.innerHTML='<span>'+r[0]+'</span><span class="bar-track"><span class="bar-fill" style="'+(pos?'left:50%':'right:50%')+';width:'+w+'%;background:'+(pos?'var(--teal)':'var(--red)')+'"></span></span><span class="v '+(pos?'pos':'neg')+'">'+(pos?'+':'−')+Math.abs(v).toLocaleString('en-US')+'</span>';
-    host.appendChild(el);
-  });
+  var S=[["DC","District of Columbia",179.8],["WA","Washington",142.3],["MA","Massachusetts",134.1],["CO","Colorado",125.0],["CA","California",121.7],["MD","Maryland",121.1],["NY","New York",120.3],["VA","Virginia",118.5],["NJ","New Jersey",116.3],["CT","Connecticut",111.5],["RI","Rhode Island",109.0],["OR","Oregon",108.7],["NH","New Hampshire",108.5],["DE","Delaware",107.0],["MN","Minnesota",106.1],["AK","Alaska",102.2],["UT","Utah",101.9],["VT","Vermont",101.0],["IL","Illinois",100.1],["AZ","Arizona",99.3],["NC","North Carolina",97.2],["TX","Texas",96.8],["GA","Georgia",95.9],["MI","Michigan",95.3],["FL","Florida",94.6],["ME","Maine",93.8],["PA","Pennsylvania",93.2],["WI","Wisconsin",92.6],["NM","New Mexico",91.6],["HI","Hawaii",91.5],["OH","Ohio",91.5],["NE","Nebraska",88.9],["MT","Montana",87.3],["MO","Missouri",87.0],["KS","Kansas",86.4],["ID","Idaho",85.4],["TN","Tennessee",85.2],["SC","South Carolina",84.6],["IA","Iowa",84.4],["ND","North Dakota",84.4],["SD","South Dakota",83.5],["WY","Wyoming",82.1],["AL","Alabama",81.7],["IN","Indiana",81.6],["NV","Nevada",81.5],["KY","Kentucky",79.2],["OK","Oklahoma",78.8],["WV","West Virginia",75.2],["LA","Louisiana",73.9],["AR","Arkansas",72.9],["MS","Mississippi",66.1]];
+  var host=document.getElementById('state-strip'),tip=document.getElementById('strip-tip');
+  S.forEach(function(r){var d=document.createElement('button');d.type='button';d.className='sb'+(r[0]==='US'?' us':'');
+    d.style.height=(r[2]/180*100)+'%';d.setAttribute('aria-label',r[1]+': '+Math.round(r[2]));
+    var show=function(){tip.textContent=r[1]+': '+Math.round(r[2])+(r[2]>=100?' (above':' (below')+' the U.S. average)';};
+    d.addEventListener('mouseenter',show);d.addEventListener('focus',show);d.addEventListener('click',show);host.appendChild(d);});
+  var line=document.createElement('div');line.className='strip-us';line.style.bottom=(100/180*100)+'%';line.innerHTML='<span>U.S. = 100</span>';host.appendChild(line);
   document.getElementById('req').addEventListener('submit',function(e){
     e.preventDefault();
     var f=e.target, g=function(n){return (f.elements[n].value||'').trim();};
