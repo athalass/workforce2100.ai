@@ -147,12 +147,12 @@
 <p class="fineprint" style="max-width:90ch">These shifts replace content rather than add credits. AI frees class time spent on drills and routine production; that time goes to delegation, checking, real work and the human core.</p>
 
 <h3 class="sub-h" style="margin-top:44px">Three program types, three plans</h3>
-<div class="ptabs" role="tablist">
+<div class="ptabs" role="tablist" data-group="pt">
 <button role="tab" aria-selected="true" data-t="b">Builders</button>
 <button role="tab" aria-selected="false" data-t="a">Analysts and managers</button>
 <button role="tab" aria-selected="false" data-t="h">High-consequence</button>
 </div>
-<div class="panel ptab" data-p="b">
+<div class="panel ptab" data-g="pt" data-p="b">
 <div class="pt-head"><div><h3>Builders: from making things to owning what AI makes</h3><p class="sub">Cybersecurity, networking, computer science, information systems, engineering, drafting, graphic design</p></div>
 <div class="pt-stats"><div><b>71%</b><span>AI can do</span></div><div><b>29%</b><span>human core</span></div><div><b>34%</b><span>high-stakes work</span></div></div></div>
 <p class="risk">The risk is not fewer jobs. It is graduates who can produce output with AI but cannot judge it.</p>
@@ -163,7 +163,7 @@
 <div><h4>Assess</h4><p>Review of AI output with planted flaws; oral defense of a design; unaided debugging.</p></div>
 </div>
 </div>
-<div class="panel ptab" data-p="a" hidden>
+<div class="panel ptab" data-g="pt" data-p="a" hidden>
 <div class="pt-head"><div><h3>Analysts and managers: from producing analysis to framing problems and leading people</h3><p class="sub">Business administration, business, entrepreneurship, paralegal, communication</p></div>
 <div class="pt-stats"><div><b>62%</b><span>AI can do</span></div><div><b>38%</b><span>human core</span></div><div><b>39%</b><span>high-stakes work</span></div></div></div>
 <p class="risk">Entry jobs shrink in content because AI drafts the reports, forms and summaries that used to train beginners.</p>
@@ -174,7 +174,7 @@
 <div><h4>Assess</h4><p>Live case work with a real organization; an audit of an AI-written analysis; oral defense of a recommendation.</p></div>
 </div>
 </div>
-<div class="panel ptab" data-p="h" hidden>
+<div class="panel ptab" data-g="pt" data-p="h" hidden>
 <div class="pt-head"><div><h3>High-consequence: AI does the paperwork, the person stays accountable</h3><p class="sub">Nursing, practical nursing, EMT, health administration, accounting, mental health</p></div>
 <div class="pt-stats"><div><b>60%</b><span>AI can do</span></div><div><b>40%</b><span>human core</span></div><div><b>67%</b><span>high-stakes work</span></div></div></div>
 <p class="risk">Graduates must catch AI errors before they reach a patient, a client or an auditor.</p>
@@ -241,7 +241,7 @@
 <div class="wrap">
 <div class="s-head">
 <div><p class="eyebrow">The report</p><h2 style="margin-top:10px">Inside an institutional program report</h2></div>
-<p class="lede">Each college receives its own report, built from public data and checked by its department chairs. Below, the structure and the benchmark it is measured against: the average community college in Sample State.</p>
+<p class="lede">Each college receives its own report, built from public data and checked by its department chairs, in three editions: a full report, a dean's report and a brief for executives and the board.</p>
 </div>
 <div class="sample">
 <div class="panel">
@@ -259,20 +259,27 @@
 <p class="fineprint" style="margin-top:18px">The full curriculum plan for each type of program is <a href="#change">above</a>.</p>
 </div>
 <div class="panel">
-<h3>Report contents</h3>
-<p class="sub">Written report, data workbook and briefing</p>
-<ol class="toc">
-<li><div>Summary<span>Five decisions for leadership, on one page.</span></div></li>
-<li><div>State trends<span>Where the state's jobs and programs are moving.</span></div></li>
-<li><div>Your region<span>County and commuting-market jobs, population and largest movers.</span></div></li>
-<li><div>Where your programs sit<span>Every credential tiered, with demand change, AI share and your share of the state's supply.</span></div></li>
-<li><div>What to do<span>Invest, rebuild curriculum, re-aim, serve displaced workers, build AI fluency into transfer programs.</span></div></li>
-<li><div>Roadmap to 2030<span>Map, pilot, redesign and review phases with dates and pilot programs.</span></div></li>
-<li><div>Measures<span>Baselines and target directions your board can track each year.</span></div></li>
-<li><div>Limits and sources<span>What the data cannot see, and every source cited.</span></div></li>
-</ol>
-<div style="margin-top:24px"><a class="btn btn-primary" href="index.html#contact">Request your institution's report</a></div>
+<h3>Three editions, one analysis</h3>
+<p class="sub">Each built from the same data workbook, written for a different reader</p>
+<div class="tier-defs" style="gap:16px">
+<div class="tdef"><span class="sw" style="background:var(--teal)"></span><div><h3>Full report</h3><p>For the provost, institutional research and program review: every program, tier, peer comparison and appendix.</p></div></div>
+<div class="tdef"><span class="sw" style="background:#3E6A8E"></span><div><h3>Dean's report</h3><p>For deans and chairs: each department's programs, supply and demand, certificates and next steps.</p></div></div>
+<div class="tdef"><span class="sw" style="background:var(--amber)"></span><div><h3>Executive and board brief</h3><p>For the president, cabinet and trustees: the county job market, how programs line up and what to decide.</p></div></div>
 </div>
+<div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-outline" href="#editions">See the outlines</a><a class="btn btn-primary" href="index.html#contact">Request your institution's report</a></div>
+</div>
+</div>
+
+<div id="editions" style="margin-top:48px;scroll-margin-top:90px">
+<h3 class="sub-h">Report outlines</h3>
+<div class="ptabs" role="tablist" data-group="ed">
+<button role="tab" aria-selected="true" data-t="full">Full report</button>
+<button role="tab" aria-selected="false" data-t="dean">Dean's report</button>
+<button role="tab" aria-selected="false" data-t="board">Executive and board brief</button>
+</div>
+<div class="panel ptab" data-g="ed" data-p="full"><div class="pt-head"><div><h3>Full report</h3><p class="sub">For the provost, institutional research and program review · 16 sections</p></div></div><ol class="toc toc2"><li><div><b class="tt">Executive summary</b><span>The decisions leadership needs to make, in two pages.</span></div></li><li><div><b class="tt">Methods and limits</b><span>Data, scenario, program-to-job links and what the analysis cannot see.</span></div></li><li><div><b class="tt">State and regional outlook</b><span>Jobs to 2035 for the state, the county and the commuting metro area.</span></div></li><li><div><b class="tt">College portfolio overview</b><span>Every award the college grants, by level, field and department.</span></div></li><li><div><b class="tt">Tiering on state demand</b><span>Every degree ranked by demand for its graduates and placed in a tier.</span></div></li><li><div><b class="tt">Results by department</b><span>An overview, then each department's programs in detail.</span></div></li><li><div><b class="tt"><span class="tdot" style="background:var(--red)"></span>Results: Review degrees</b><span>Programs where demand for graduates falls; options to re-aim, merge or wind down.</span></div></li><li><div><b class="tt"><span class="tdot" style="background:#3E6A8E"></span>Results: Reinvent degrees</b><span>Stable demand; what the curriculum must change.</span></div></li><li><div><b class="tt"><span class="tdot" style="background:var(--teal)"></span>Results: Invest degrees</b><span>Growing demand; where to add capacity, and redesign first if AI-heavy.</span></div></li><li><div><b class="tt">Transfer degrees without a rating</b><span>General studies and transfer programs, judged on the four-year fields they feed.</span></div></li><li><div><b class="tt">Certificates</b><span>Every certificate tiered, and how certificates stack into degrees.</span></div></li><li><div><b class="tt">Ranking against in-state peers</b><span>The college's program mix and share of state supply against peer institutions.</span></div></li><li><div><b class="tt">Graduate wage check</b><span>Earnings of past graduates from state longitudinal wage records, tracked over time.</span></div></li><li><div><b class="tt">Short-term training and apprenticeship competition</b><span>Other providers training for the same jobs in the region.</span></div></li><li><div><b class="tt">What it means for resource use</b><span>Where faculty, space and budget should shift.</span></div></li><li><div><b class="tt">Appendices</b><span>Program tables, task maps, data workbook and sources.</span></div></li></ol></div>
+<div class="panel ptab" data-g="ed" data-p="dean" hidden><div class="pt-head"><div><h3>Dean's report</h3><p class="sub">For deans and department chairs · 10 sections</p></div></div><ol class="toc toc2"><li><div><b class="tt">Summary</b><span>What changes for the school or division, on one page.</span></div></li><li><div><b class="tt">Method, geography and limits</b><span>How the numbers were built and for which labor market.</span></div></li><li><div><b class="tt">County job market</b><span>Jobs that grow and shrink where graduates work.</span></div></li><li><div><b class="tt">How college programs line up</b><span>The program map: tiers and AI share.</span></div></li><li><div><b class="tt">Programs by department</b><span>Each department's programs, tiers and AI exposure.</span></div></li><li><div><b class="tt">Supply and demand: every rated degree</b><span>Graduates a year against expected jobs to 2035, with ranges.</span></div></li><li><div><b class="tt">Certificates by department</b><span>Tiers and stacking paths for each department's certificates.</span></div></li><li><div><b class="tt">Transfer degrees and unrated programs</b><span>How to judge programs that feed four-year degrees.</span></div></li><li><div><b class="tt">Findings and next steps for deans</b><span>Curriculum changes, pilots and decisions for the next cycle.</span></div></li><li><div><b class="tt">Appendices</b><span>Task maps and program tables for faculty.</span></div></li></ol></div>
+<div class="panel ptab" data-g="ed" data-p="board" hidden><div class="pt-head"><div><h3>Executive and board brief</h3><p class="sub">For the president, cabinet and trustees · 8 sections</p></div></div><ol class="toc toc2"><li><div><b class="tt">Summary</b><span>Three to five decisions for the board.</span></div></li><li><div><b class="tt">County job market</b><span>Where the county's jobs are heading to 2035.</span></div></li><li><div><b class="tt">How college programs line up</b><span>The share of awards in growing, stable and declining fields.</span></div></li><li><div><b class="tt">Graduates and local openings</b><span>Whether graduates match the jobs the region will have.</span></div></li><li><div><b class="tt">Certificates</b><span>Short credentials and how they serve adult workers.</span></div></li><li><div><b class="tt">Transfer degrees</b><span>What AI means for students heading to four-year programs.</span></div></li><li><div><b class="tt">Findings and next steps</b><span>The roadmap to 2030 and the measures the board can track.</span></div></li><li><div><b class="tt">Appendices</b><span>Key tables and sources.</span></div></li></ol></div>
 </div>
 <p class="fineprint" style="max-width:90ch;margin-top:28px">All figures are estimates under one AI-adoption scenario for 2035, using BLS OEWS May 2025, QCEW 2025, Census LODES 8, IPEDS 2023–24 completions and state population projections. Program destinations use national links between fields of study and occupations. Ranges and full methods are in each report. Underlying research: <i>Where Work Is Moving</i> (2026), <a href="https://papers.ssrn.com/abstract=7679758">SSRN</a>; more at <a href="https://workforce2100.org">workforce2100.org</a>.</p>
 <p class="fineprint" style="max-width:90ch;margin-top:20px"><b>About this sample.</b> Sample State and Sample County are illustrative. The patterns come from a real state analysis; names are withheld and job, wage and completion counts are rescaled. Percentages and relationships are unchanged.</p>
@@ -330,11 +337,13 @@ document.getElementById('program-map-svg').appendChild(svg);
     var c=m>0?'var(--teal)':m<0?'var(--red)':'#9AA6B3';
     td.innerHTML='<div class="rbar"><span class="zero" style="left:'+x(0)+'%"></span><span class="band" style="left:'+x(lo)+'%;width:'+Math.max(.8,x(hi)-x(lo))+'%;background:'+c+'"></span><span class="mid" style="left:'+x(m)+'%;border-color:'+c+'"></span></div>';
   });
-  var tabs=document.querySelectorAll('.ptabs button');
-  tabs.forEach(function(b){b.addEventListener('click',function(){
-    tabs.forEach(function(o){o.setAttribute('aria-selected',o===b?'true':'false')});
-    document.querySelectorAll('.ptab').forEach(function(p){p.hidden=p.dataset.p!==b.dataset.t});
-  })});
+  document.querySelectorAll('.ptabs').forEach(function(g){
+    var grp=g.dataset.group,tabs=g.querySelectorAll('button');
+    tabs.forEach(function(b){b.addEventListener('click',function(){
+      tabs.forEach(function(o){o.setAttribute('aria-selected',o===b?'true':'false')});
+      document.querySelectorAll('.ptab[data-g="'+grp+'"]').forEach(function(p){p.hidden=p.dataset.p!==b.dataset.t});
+    })});
+  });
 })();
 </script>
 </body>

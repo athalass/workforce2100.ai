@@ -341,3 +341,7 @@ table.pbp th{padding:12px 14px}
 .legal-foot{margin-top:24px;font-size:14.5px;color:var(--ink-3)}
 .footer-legal{margin-top:6px;font-size:13.5px}.footer-legal a{margin-right:14px}
 @media (max-width:860px){.legal-grid{grid-template-columns:1fr;gap:20px}.legal-nav{position:static;display:flex;flex-wrap:wrap;gap:4px}.legal-cards{grid-template-columns:1fr}.legal-hero h1{font-size:32px}}
+.toc2{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;row-gap:12px;margin-top:16px}
+.toc2 .tdot{margin-right:6px}
+@media (max-width:760px){.toc2{grid-template-columns:1fr}}
+.toc2 .tt{font-weight:400;display:block}.toc2 .tt .tdot{display:inline-block}
