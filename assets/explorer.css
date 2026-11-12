@@ -162,3 +162,27 @@
 .xp .legal-nav{position:static;display:flex;flex-wrap:wrap;gap:4px}
 .xp .legal-cards{grid-template-columns:1fr}
 .xp .legal-hero h1{font-size:32px}}
+
+/* page-specific explorer styles */
+.xp .tile-map{ display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 4px; max-width: 720px; }
+.xp .tile{ aspect-ratio: 1; min-width: 0; padding: 0; font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; border-radius: 4px; border: 1px solid rgba(22,32,42,0.12); }
+.xp .tile[aria-pressed="true"]{ border: 3px solid var(--ink); }
+.xp .legend{ margin-top: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-2); }
+.xp .legend i{ display: inline-block; width: 28px; height: 14px; border-radius: 3px; border: 1px solid rgba(22,32,42,0.12); }
+.xp .panel{ border: 1px solid var(--line); border-radius: 10px; padding: 22px; }
+.xp dl.kv{ margin: 14px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; font-size: 14px; }
+.xp dl.kv dt{ color: var(--ink-3); }
+.xp dl.kv dd{ margin: 2px 0 0; font-weight: 600; }
+.xp .wf{ display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+.xp .wf .lbl{ flex: 1 1 320px; min-width: 0; font-size: 15px; line-height: 1.45; }
+.xp .wf .val{ flex: 2 1 420px; min-width: 0; display: flex; align-items: center; gap: 12px; }
+.xp .wf .track{ flex: 1; height: 22px; background: #EEF2F5; border-radius: 4px; overflow: hidden; }
+.xp .wf .fill{ height: 100%; }
+.xp .quads{ margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.xp .quad{ border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.xp .quad h3{ font-size: 22px; }
+.xp .panel-dark{ margin-top: 40px; background: var(--ink); color: #FFFFFF; border-radius: 12px; padding: 32px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center; }
+.xp .panel-dark dl{ flex: 1 1 300px; min-width: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; font-size: 14px; }
+.xp .panel-dark dt{ color: #C9D6E2; }
+.xp .panel-dark dd{ margin: 2px 0 0; font-size: 22px; font-weight: 700; }
+.xp [hidden]{ display: none !important; }
