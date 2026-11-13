@@ -310,7 +310,7 @@
     var show=function(){tip.textContent=r[1]+': '+Math.round(r[2])+(r[2]>=100?' (above':' (below')+' the U.S. average)';};
     d.addEventListener('mouseenter',show);d.addEventListener('focus',show);d.addEventListener('click',show);host.appendChild(d);});
   var line=document.createElement('div');line.className='strip-us';line.style.bottom=(100/180*100)+'%';line.innerHTML='<span>U.S. = 100</span>';host.appendChild(line);
-  var FORM_URL='__APPS_SCRIPT_URL__', t0=Date.now();
+  var FORM_URL='https://script.google.com/macros/s/AKfycbxYNaLG-dv8NAPukrcl-bZeJ1graS-H77T_N2WqNKpxx6Oz98kl4hYawVmzKqpMx3YO/exec', t0=Date.now();
   document.getElementById('req').addEventListener('submit',function(e){
     e.preventDefault();
     var f=e.target, g=function(n){return (f.elements[n].value||'').trim();}, note=document.getElementById('req-note'), btn=f.querySelector('button[type=submit]');
