@@ -396,3 +396,25 @@ table.pbp th{padding:12px 14px}
 
 .price-line{margin:0;font-size:14.5px;color:var(--ink-2)}.price-line b{color:var(--ink);font-family:var(--serif);font-size:18px}
 .faq-h{font-family:var(--serif);font-size:22px;margin:30px 0 4px;color:var(--ink)}.faq .faq-h:first-child{margin-top:0}
+
+/* mobile menu */
+.nav-toggle{display:none;align-items:center;gap:8px;background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:8px;padding:8px 12px;font:600 14px var(--sans);cursor:pointer}
+.nav-toggle:hover,.nav-toggle:focus-visible{border-color:#fff}
+.nav-toggle .bars{position:relative;width:16px;height:2px;background:currentColor;border-radius:1px}
+.nav-toggle .bars:before,.nav-toggle .bars:after{content:"";position:absolute;left:0;width:16px;height:2px;background:currentColor;border-radius:1px}
+.nav-toggle .bars:before{top:-5px}.nav-toggle .bars:after{top:5px}
+.nav-open .nav-toggle .bars{background:transparent}
+.nav-open .nav-toggle .bars:before{top:0;transform:rotate(45deg)}.nav-open .nav-toggle .bars:after{top:0;transform:rotate(-45deg)}
+@media (max-width:960px){
+  .site-header .wrap{position:relative;gap:12px}
+  .nav-toggle{display:inline-flex}
+  .site-header .nav{margin-left:auto}
+  .nav-open .nav{position:absolute;top:68px;left:0;right:0;margin:0;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;background:#0F1B2D;border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 12px 24px rgba(0,0,0,.25);max-height:calc(100vh - 68px);overflow:auto}
+  .nav-open .nav a:not(.btn){display:block;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.08);font-size:17px}
+  .nav-open .nav .btn{margin-top:16px;padding:13px 16px}
+}
+@media (max-width:480px){
+  .site-header .nav .btn{display:none}
+  .nav-open .nav .btn{display:flex}
+  .brand{font-size:17px}
+}
