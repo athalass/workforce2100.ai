@@ -269,7 +269,9 @@
 </ul>
 </div>
 <form class="req" id="req" novalidate>
+<div style="position:absolute;left:-9999px" aria-hidden="true"><label for="f-website">Leave this empty</label><input id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
 <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+<div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
 <div><label for="f-org">Organization</label><input id="f-org" name="org" autocomplete="organization" required></div>
 <div><label for="f-role">Role</label><input id="f-role" name="role" autocomplete="organization-title"></div>
 <div><label for="f-state">State</label><input id="f-state" name="state"></div>
@@ -282,9 +284,9 @@
 <option>Custom report</option>
 <option>Not sure yet</option>
 </select></div>
-<div class="full"><label for="f-msg">What decision should the report support?</label><textarea id="f-msg" name="msg" placeholder="For example: our program review cycle starts in the spring, and the board wants to know which programs to grow."></textarea></div>
+<div class="full"><label for="f-msg">What questions should the report help you answer?</label><textarea id="f-msg" name="msg" placeholder="For example: our program review cycle starts in the spring, and the board wants to know which programs to grow."></textarea></div>
 <div class="full" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
-<span class="note">Opens your email app with this request filled in.</span>
+<span class="note" id="req-note">We reply within two business days.</span>
 <button class="btn btn-primary" type="submit">Send request</button>
 </div>
 </form>
@@ -308,12 +310,23 @@
     var show=function(){tip.textContent=r[1]+': '+Math.round(r[2])+(r[2]>=100?' (above':' (below')+' the U.S. average)';};
     d.addEventListener('mouseenter',show);d.addEventListener('focus',show);d.addEventListener('click',show);host.appendChild(d);});
   var line=document.createElement('div');line.className='strip-us';line.style.bottom=(100/180*100)+'%';line.innerHTML='<span>U.S. = 100</span>';host.appendChild(line);
+  var FORM_URL='__APPS_SCRIPT_URL__', t0=Date.now();
   document.getElementById('req').addEventListener('submit',function(e){
     e.preventDefault();
-    var f=e.target, g=function(n){return (f.elements[n].value||'').trim();};
-    if(!g('name')||!g('org')){ (g('name')?f.elements.org:f.elements.name).focus(); return; }
-    var body='Name: '+g('name')+'\nOrganization: '+g('org')+'\nRole: '+g('role')+'\nState: '+g('state')+'\nReport: '+g('type')+'\n\n'+g('msg');
-    location.href='mailto:info@workforce2100.ai?subject='+encodeURIComponent('Report request: '+g('type')+' ('+g('org')+')')+'&body='+encodeURIComponent(body);
+    var f=e.target, g=function(n){return (f.elements[n].value||'').trim();}, note=document.getElementById('req-note'), btn=f.querySelector('button[type=submit]');
+    var miss=['name','email','org'].filter(function(n){return !g(n);})[0];
+    if(miss){f.elements[miss].focus();note.textContent='Please add your name, email and organization.';return;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(g('email'))){f.elements.email.focus();note.textContent='Please check your email address.';return;}
+    var data=new URLSearchParams();['name','email','org','role','state','type','msg','website'].forEach(function(n){data.append(n,g(n));});
+    data.append('t0',t0);data.append('page',location.href);
+    btn.disabled=true;btn.textContent='Sending\u2026';
+    var fallback=function(){var body='Name: '+g('name')+'\nEmail: '+g('email')+'\nOrganization: '+g('org')+'\nRole: '+g('role')+'\nState: '+g('state')+'\nReport: '+g('type')+'\n\n'+g('msg');
+      note.innerHTML='Something went wrong sending the form. Please <a href="mailto:info@workforce2100.ai?subject='+encodeURIComponent('Report request: '+g('type')+' ('+g('org')+')')+'&body='+encodeURIComponent(body)+'" style="color:inherit;text-decoration:underline">email us instead</a>.';
+      btn.disabled=false;btn.textContent='Send request';};
+    fetch(FORM_URL,{method:'POST',body:data}).then(function(r){return r.json();}).then(function(j){
+      if(!j.ok){fallback();return;}
+      f.innerHTML='<div class="full" role="status" style="padding:8px 0"><h3 style="margin:0 0 6px">Thank you, we have your request.</h3><p style="margin:0">We will reply to '+g('email').replace(/</g,'&lt;')+' within two business days.</p></div>';
+    }).catch(fallback);
   });
 })();
 </script>
