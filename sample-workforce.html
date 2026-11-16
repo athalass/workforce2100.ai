@@ -50,7 +50,7 @@
 </div>
 <div class="map-grid">
 <div class="tier-defs">
-<div class="tdef"><span class="sw" style="background:var(--teal)"></span><div><h3>What people do</h3><p class="rule">Industry mix sets how much work shrinks.</p><p>Counties with more office, retail and transportation jobs have more workers in declining occupations. Places built on federal, defense, science and health work have fewer.</p></div></div>
+<div class="tdef"><span class="sw" style="background:var(--teal)"></span><div><h3>What people do</h3><p class="rule">Industry mix sets how much work shrinks.</p><p>Counties with more office, retail and administrative jobs have more workers in shrinking occupations. Places built on federal, defense, science and health work have fewer.</p></div></div>
 <div class="tdef"><span class="sw" style="background:var(--amber)"></span><div><h3>What work pays</h3><p class="rule">Wages set when AI pays first.</p><p>At today's AI cost, AI pays for the same tasks everywhere. If AI costs rise to $10–20 per hour of work, it pays first where labor costs most: in our sample state, the big-city suburbs and the metro core first, and the rural counties later.</p></div></div>
 <div class="tdef"><span class="sw" style="background:#3E6A8E"></span><div><h3>Where people commute</h3><p class="rule">Residents and jobs are not the same thing.</p><p>In one sample county, 39% of employed residents work in another state. A plan for residents has to follow the labor market they actually work in.</p></div></div>
 </div>
@@ -58,7 +58,7 @@
 <div style="display:grid;gap:2px;font-size:14px;color:var(--ink-3);margin-bottom:14px"><b style="font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600">Share of jobs in declining occupations</b><span>Selected counties in Sample State, place of work, 2025–2035</span></div>
 <div class="bars" id="county-share"></div>
 <div class="callouts" style="margin-top:24px">
-<div class="callout"><div class="n">4.8–7.4%</div><div class="l">range across the state's counties</div></div>
+<div class="callout"><div class="n">5.4–7.7%</div><div class="l">range across the state's counties</div></div>
 <div class="callout"><div class="n">180 vs 66</div><div class="l">wages at stake, highest vs lowest state (U.S. = 100)</div></div>
 <div class="callout"><div class="n">2.7×</div><div class="l">gap in wages at stake between the highest and lowest states</div></div>
 </div>
@@ -72,7 +72,7 @@
 <div class="wrap">
 <div class="s-head">
 <div><p class="eyebrow">Example county</p><h2 style="margin-top:10px">Sample County at a glance</h2></div>
-<p class="lede">176,000 jobs. 5.6% are in declining occupations, just below the state average of 5.7%. Net gain of about 3,100 jobs; $2.3 billion a year in wages tied to the work hours AI removes.</p>
+<p class="lede">176,000 jobs. AI takes over about 17% of the work. 6.1% of jobs are in shrinking occupations, just below the state's 6.2%. Net gain of about 4,800 jobs (+2.7%), and about $2.4 billion a year in wages paid today for work AI takes over. Under a slow recovery, the county loses about 2,200 jobs on net.</p>
 </div>
 <div class="sample">
 <div class="panel">
@@ -80,28 +80,18 @@
 <p class="sub">2025–2035, place of work</p>
 <table class="t">
 <thead><tr><th>Occupation group</th><th class="r">Jobs 2025</th><th class="r">Net change</th></tr></thead>
-<tbody>
-<tr><td>Office and administrative support</td><td class="r">19,900</td><td class="r neg">−4,600</td></tr>
-<tr><td>Retail and sales</td><td class="r">15,000</td><td class="r neg">−1,700</td></tr>
-<tr><td>Transportation and logistics</td><td class="r">14,300</td><td class="r neg">−840</td></tr>
-<tr><td>Food service</td><td class="r">16,100</td><td class="r neg">−840</td></tr>
-<tr><td>Education</td><td class="r">10,600</td><td class="r neg">−720</td></tr>
-<tr><td>Healthcare support</td><td class="r">7,100</td><td class="r pos">+1,860</td></tr>
-<tr><td>Healthcare professionals</td><td class="r">10,700</td><td class="r pos">+1,500</td></tr>
-<tr><td>Technology and analytics</td><td class="r">9,400</td><td class="r pos">+1,440</td></tr>
-<tr><td>Construction</td><td class="r">7,600</td><td class="r pos">+1,380</td></tr>
-<tr><td>Management</td><td class="r">15,300</td><td class="r pos">+1,380</td></tr>
-</tbody>
+<tbody><tr><td>Office and administrative support</td><td class="r">19,600</td><td class="r neg">−4,000</td></tr><tr><td>Retail and sales</td><td class="r">14,500</td><td class="r neg">−1,700</td></tr><tr><td>Education</td><td class="r">8,700</td><td class="r neg">−1,000</td></tr><tr><td>Business and finance</td><td class="r">13,500</td><td class="r neg">−850</td></tr><tr><td>Management</td><td class="r">15,200</td><td class="r neg">−630</td></tr><tr><td>Construction</td><td class="r">8,100</td><td class="r pos">+880</td></tr><tr><td>Healthcare professionals</td><td class="r">9,500</td><td class="r pos">+1,540</td></tr><tr><td>Transportation and logistics</td><td class="r">16,200</td><td class="r pos">+1,850</td></tr><tr><td>Healthcare support</td><td class="r">6,200</td><td class="r pos">+1,860</td></tr><tr><td>Food service</td><td class="r">16,600</td><td class="r pos">+3,200</td></tr></tbody>
 </table>
+<p class="fineprint">Groups are estimated through each industry's occupations, so they sum to slightly more than the county total.</p>
 </div>
 <div class="panel">
 <h3>What the brief adds</h3>
 <p class="sub">Context a county plan needs</p>
 <ul class="toc">
-<li><div>Largest movers<span>Home health aides (+880), managers (+510) and registered nurses (+490) grow most; secretaries (−970) and retail salespersons (−810) shrink most.</span></div></li>
+<li><div>Largest movers<span>Fast food workers (+1,190), home health aides (+1,110) and material movers (+800) grow most. Secretaries (−820), retail salespersons (−560) and retail supervisors (−550) shrink most.</span></div></li>
 <li><div>The real labor market<span>Only 39% of employed residents work in the county. Plans should follow the regional metro market, not county lines.</span></div></li>
 <li><div>Population change<span>The 65+ population grows 23%, driving care demand. Children under 5 rise 13% while school-age children fall slightly.</span></div></li>
-<li><div>Training supply<span>Gaps between growing occupations and Eligible Training Provider List programs located in the county.</span></div></li>
+<li><div>Training supply<span>Growing occupations compared with the programs, providers and apprenticeships in the region.</span></div></li>
 </ul>
 </div>
 </div>
@@ -119,14 +109,14 @@
 <h3>Jobs lost and added, Sample County</h3>
 <p class="sub">2025–2035, place of work</p>
 <div class="bars">
-<div class="bar-row" style="grid-template-columns:190px 1fr 74px"><span>Lost in declining occupations</span><span class="bar-track"><span class="bar-fill" style="left:0;width:76%;background:var(--red)"></span></span><span class="v">9,900</span></div>
-<div class="bar-row" style="grid-template-columns:190px 1fr 74px"><span>Added by growing occupations</span><span class="bar-track"><span class="bar-fill" style="left:0;width:100%;background:var(--teal)"></span></span><span class="v">13,000</span></div>
-<div class="bar-row" style="grid-template-columns:190px 1fr 74px"><span>Net change</span><span class="bar-track"><span class="bar-fill" style="left:0;width:24%;background:#3E6A8E"></span></span><span class="v pos">+3,100</span></div>
+<div class="bar-row" style="grid-template-columns:190px 1fr 74px"><span>Lost in shrinking occupations</span><span class="bar-track"><span class="bar-fill" style="left:0;width:69%;background:var(--red)"></span></span><span class="v ">10,800</span></div>
+<div class="bar-row" style="grid-template-columns:190px 1fr 74px"><span>Added by growing occupations</span><span class="bar-track"><span class="bar-fill" style="left:0;width:100%;background:var(--teal)"></span></span><span class="v ">15,600</span></div>
+<div class="bar-row" style="grid-template-columns:190px 1fr 74px"><span>Net change</span><span class="bar-track"><span class="bar-fill" style="left:0;width:31%;background:#3E6A8E"></span></span><span class="v pos">+4,800</span></div>
 </div>
 <div class="callouts">
-<div class="callout"><div class="n">$2.3B</div><div class="l">a year in county wages tied to the work hours AI removes</div></div>
-<div class="callout"><div class="n">4,600</div><div class="l">office and admin jobs lost, almost half of all losses</div></div>
-<div class="callout"><div class="n">39%</div><div class="l">of employed residents work in the county</div></div>
+<div class="callout"><div class="n">76%</div><div class="l">of residents in shrinking occupations expected to change occupation in the regional labor market; 12% move away and 12% stay without a matching job</div></div>
+<div class="callout"><div class="n">$2.4B</div><div class="l">a year in county wages paid today for work AI takes over</div></div>
+<div class="callout"><div class="n">37%</div><div class="l">of jobs lost are office and administrative work</div></div>
 </div>
 </div>
 <div class="panel">
@@ -134,22 +124,26 @@
 <p class="sub">Largest single-occupation changes in the county</p>
 <table class="t">
 <thead><tr><th>Shrinking</th><th class="r">Jobs</th><th>Growing</th><th class="r">Jobs</th></tr></thead>
-<tbody>
-<tr><td>Secretaries</td><td class="r neg">−970</td><td>Home health aides</td><td class="r pos">+880</td></tr>
-<tr><td>Retail salespersons</td><td class="r neg">−810</td><td>Operations managers</td><td class="r pos">+510</td></tr>
-<tr><td>Customer service reps</td><td class="r neg">−550</td><td>Registered nurses</td><td class="r pos">+490</td></tr>
-<tr><td>Office supervisors</td><td class="r neg">−480</td><td>Nursing assistants</td><td class="r pos">+390</td></tr>
-<tr><td></td><td></td><td>Software developers</td><td class="r pos">+280</td></tr>
-<tr><td></td><td></td><td>Electricians</td><td class="r pos">+210</td></tr>
-</tbody>
+<tbody><tr><td>Secretaries</td><td class="r neg">−820</td><td>Fast food and counter workers</td><td class="r pos">+1,190</td></tr><tr><td>Retail salespersons</td><td class="r neg">−560</td><td>Home health and personal care aides</td><td class="r pos">+1,110</td></tr><tr><td>Retail supervisors</td><td class="r neg">−550</td><td>Material movers</td><td class="r pos">+800</td></tr><tr><td>General and operations managers</td><td class="r neg">−510</td><td>Janitors and cleaners</td><td class="r pos">+470</td></tr><tr><td>Office clerks</td><td class="r neg">−490</td><td>Registered nurses</td><td class="r pos">+380</td></tr><tr><td>Customer service reps</td><td class="r neg">−430</td><td>Restaurant cooks</td><td class="r pos">+370</td></tr></tbody>
 </table>
-<p class="fineprint">Office and retail workers lose the most jobs; care, management, health and the trades add the most. Few of these moves are easy without training.</p>
+<p class="fineprint">Office, retail and supervisory work loses the most jobs. Care, food service, logistics and health add the most. Few of these moves are easy without training.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="s alt" id="pathways">
+<section class="s alt" id="industries">
+<div class="wrap">
+<div class="s-head">
+<div><p class="eyebrow">Industries</p><h2 style="margin-top:10px">Which industries can re-employ their own workers?</h2></div>
+<p class="lede">The brief breaks every industry into its occupations, showing both the jobs AI shrinks and the jobs it grows. Some industries can absorb their own losses; others cannot, and their workers need routes into a different industry.</p>
+</div>
+<div class="panel"><div class="tscroll"><table class="t"><thead><tr><th>Industry</th><th class="r">Net change, main case</th><th class="r">Slow recovery</th><th class="r">New jobs per job lost</th></tr></thead><tbody><tr><td>Health care and social assistance</td><td class="r pos">+3,100</td><td class="r pos">+2,100</td><td class="r">4.8</td></tr><tr><td>Accommodation and food services</td><td class="r pos">+3,000</td><td class="r pos">+2,000</td><td class="r">16.3</td></tr><tr><td>Construction</td><td class="r pos">+520</td><td class="r pos">+150</td><td class="r">1.9</td></tr><tr><td>Retail trade</td><td class="r neg">−500</td><td class="r neg">−1,200</td><td class="r">0.6</td></tr><tr><td>Professional and technical services</td><td class="r neg">−1,000</td><td class="r neg">−1,600</td><td class="r">0.3</td></tr><tr><td>Educational services</td><td class="r neg">−1,200</td><td class="r neg">−1,400</td><td class="r">0.3</td></tr></tbody></table></div>
+<p class="fineprint">Health care and food service absorb their own losses. Professional services, education and retail cannot, so their workers need cross-industry routes.</p></div>
+</div>
+</section>
+
+<section class="s" id="pathways">
 <div class="wrap">
 <div class="s-head">
 <div><p class="eyebrow">Transitions</p><h2 style="margin-top:10px">Will workers find similar pay, and how fast?</h2></div>
@@ -160,29 +154,24 @@
 <div class="tdef"><span class="sw" style="background:var(--teal)"></span><div><h3>Direct</h3><p class="rule">Most skills carry over; same or higher pay; under 6 months of training.</p><p>A short credential or apprenticeship is enough.</p></div></div>
 <div class="tdef"><span class="sw" style="background:var(--amber)"></span><div><h3>Winding</h3><p class="rule">About half the skills carry over; about 90% of the pay; under 2 years.</p><p>A certificate or associate degree, ideally part-time and stackable.</p></div></div>
 <div class="tdef"><span class="sw" style="background:#3E6A8E"></span><div><h3>Unpaved</h3><p class="rule">Everything else: a longer climb.</p><p>Often a degree, but it can lead to much higher pay.</p></div></div>
-<div class="tdef ai"><span class="sw" style="background:var(--red)"></span><div><h3>The capacity check</h3><p class="rule">A good match only helps if there are jobs to fill.</p><p>We compare the workers headed to each destination with its new jobs, and steer plans toward occupations big enough to absorb them.</p></div></div>
 </div>
 <div class="panel map-panel">
-<div style="display:grid;gap:2px;font-size:14px;color:var(--ink-3);margin-bottom:16px"><b style="font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600">Example pathways in Sample State</b><span>Best-fitting growing occupation for some of the largest losses</span></div>
-<div class="paths">
-<div class="path"><div class="from">Food service supervisors</div><div class="arrow" style="--c:var(--teal)"><span>Direct · 102% of pay</span></div><div class="to">Nursing assistants</div><p class="bridge">Bridges: about 20 training-provider programs and an apprenticeship</p></div>
-<div class="path"><div class="from">Receptionists</div><div class="arrow" style="--c:var(--amber)"><span>Winding · 113–118% of pay</span></div><div class="to">Nursing assistants or pharmacy technicians</div><p class="bridge">Bridges: certificates, training providers, a patient care technician apprenticeship</p></div>
-<div class="path"><div class="from">Secretaries and admin assistants</div><div class="arrow" style="--c:var(--amber)"><span>Winding · 93% of pay</span></div><div class="to">Pharmacy technicians</div><p class="bridge">Bridges: community college certificates, training providers, apprenticeship</p></div>
-<div class="path"><div class="from">Bookkeeping and accounting clerks</div><div class="arrow" style="--c:#3E6A8E"><span>Unpaved · 167% of pay</span></div><div class="to">Accountants and auditors</div><p class="bridge">Bridges: accounting certificates and bachelor's programs</p></div>
+<div class="tier-defs">
+<div class="tdef ai"><span class="sw" style="background:var(--red)"></span><div><h3>The capacity check</h3><p class="rule">A good match only helps if there are jobs to fill.</p><p>We compare the workers headed to each destination with its new jobs, and steer plans toward occupations big enough to absorb them: home health and personal care, nursing, food service, logistics and the trades.</p></div></div>
 </div>
-<div class="cap">
-<p class="rule" style="font-weight:600;margin-bottom:8px">But watch capacity: eight shrinking occupations point to pharmacy technicians</p>
-<div class="bar-row" style="grid-template-columns:170px 1fr 70px"><span>Workers displaced</span><span class="bar-track"><span class="bar-fill" style="left:0;width:100%;background:var(--red)"></span></span><span class="v">21,900</span></div>
-<div class="bar-row" style="grid-template-columns:170px 1fr 70px;margin-top:8px"><span>New pharmacy tech jobs</span><span class="bar-track"><span class="bar-fill" style="left:0;width:3%;background:var(--teal)"></span></span><span class="v">660</span></div>
-<p class="fineprint" style="margin-top:10px">33 workers per new job. A workable plan sends most workers to the large growing occupations instead: home health aides (+7,700), nursing assistants (+4,700), registered nurses (+4,500) and construction trades.</p>
+<div class="callouts" style="grid-template-columns:1fr;margin-top:20px"><div class="callout"><div class="n">About 7 in 10</div><div class="l">of the state's job losses have an in-state program, provider or apprenticeship bridging the best-fitting path</div></div></div>
 </div>
 </div>
 </div>
-<div class="callouts" style="margin-top:28px">
-<div class="callout"><div class="n">74%</div><div class="l">of the state's job losses have a local bridge to their best pathway</div></div>
-<div class="callout"><div class="n">62%</div><div class="l">of losses have a best pathway that pays the same or more</div></div>
-<div class="callout"><div class="n">15 / 53 / 32</div><div class="l">percent of losses whose best path is Direct / Winding / Unpaved</div></div>
+</section>
+
+<section class="s alt" id="readiness">
+<div class="wrap">
+<div class="s-head">
+<div><p class="eyebrow">Readiness</p><h2 style="margin-top:10px">Is the county ready?</h2></div>
+<p class="lede">Each brief rates the county on the factors that decide whether displaced workers land well, in the main case and under a slow recovery.</p>
 </div>
+<div class="panel"><div class="tscroll"><table class="t"><thead><tr><th>Factor</th><th>Assessment</th><th>Evidence</th></tr></thead><tbody><tr><td><b>Scale</b></td><td>Moderate</td><td>6.1% of jobs in shrinking occupations</td></tr><tr><td><b>Local absorption</b></td><td>Strong</td><td>About three quarters change occupation within the regional labor market</td></tr><tr><td><b>Match by education</b></td><td>Mismatch at the bachelor's level</td><td>Bachelor's level: 4,000 lost, 2,700 new. High school level: 5,900 lost, 11,000 new</td></tr><tr><td><b>Pipeline</b></td><td>Gaps in short health and technical credentials</td><td>The region's colleges cover 5–18% of openings for nursing and medical assistants, practical nurses, dental assistants, behavioral health counselors and auto technicians</td></tr><tr><td><b>Federal exposure</b></td><td>Under-measured</td><td>Standard employment data omit most employment at a large federal installation</td></tr><tr><td><b>Stress test</b></td><td>Vulnerable</td><td>Losses rise about 24% and the county loses about 2,200 jobs on net</td></tr></tbody></table></div></div>
 </div>
 </section>
 
@@ -190,14 +179,14 @@
 <div class="wrap">
 <div class="s-head">
 <div><p class="eyebrow">Recommendations</p><h2 style="margin-top:10px">What to fund first</h2></div>
-<p class="lede">The brief ends with priorities a workforce board can act on this year.</p>
+<p class="lede">The brief ends with priorities a workforce board can act on this year, chosen to hold up under a slow recovery.</p>
 </div>
 <ol class="findings">
-<li><div><b>Short, stackable routes into care.</b><p>Home health aides, nursing assistants and registered nurses add the most county jobs. Fund entry credentials that stack toward nursing.</p></div></li>
-<li><div><b>Trades through apprenticeship.</b><p>About 660 new county jobs among electricians, plumbers, construction laborers, maintenance workers and equipment operators.</p></div></li>
-<li><div><b>IT support for office workers.</b><p>Computer user support and network roles grow in the county; short routes fit adult office workers.</p></div></li>
+<li><div><b>Short, stackable routes into care.</b><p>Home health aides, nursing and medical assistants and practical nurses have the largest gaps and the most growth, under both scenarios.</p></div></li>
+<li><div><b>Trades and technicians through apprenticeship.</b><p>HVAC, auto and construction trades.</p></div></li>
+<li><div><b>Cross-industry routes for office workers.</b><p>Workers in professional services, education and retail need routes into other industries, because their own industries will not re-employ them.</p></div></li>
+<li><div><b>Routes for bachelor's-level workers.</b><p>Into health management, cybersecurity and data roles.</p></div></li>
 <li><div><b>Evening and online options.</b><p>Most displaced workers are working adults; class schedules decide who can make the move.</p></div></li>
-<li><div><b>More local training providers.</b><p>Only 5 Eligible Training Provider List programs are located in the county. Recruit providers for the growing occupations.</p></div></li>
 </ol>
 </div>
 </section>
@@ -215,10 +204,11 @@
 <ol class="toc">
 <li><div>Summary<span>Jobs and wages at risk, and the five priorities, on one page.</span></div></li>
 <li><div>Your place in the state<span>How your county compares, and why.</span></div></li>
-<li><div>Who is affected<span>Occupations, pay levels, and where residents work.</span></div></li>
+<li><div>Who is affected<span>Industries, occupations, pay levels, and where residents work.</span></div></li>
 <li><div>Absorption<span>Whether growing occupations can take the workers who need to move.</span></div></li>
 <li><div>Transition paths<span>Pay, time to retrain, and local bridges for each shrinking occupation.</span></div></li>
-<li><div>Training gaps<span>Growing occupations with no local program, provider or apprenticeship.</span></div></li>
+<li><div>Training gaps and pipeline<span>Growing occupations with no local program, provider or apprenticeship, and completions against openings.</span></div></li>
+<li><div>Readiness and stress test<span>How ready the county is, including under a slow recovery.</span></div></li>
 <li><div>What to fund first<span>Priorities and measures to track each year.</span></div></li>
 </ol>
 </div>
@@ -233,23 +223,29 @@
 </div>
 </div>
 <p class="fineprint" style="max-width:90ch;margin-top:20px"><a href="work-2035.html#states">Explore state and metro results in the open data →</a></p>
-<p class="fineprint" style="max-width:90ch;margin-top:20px"><b>About this sample.</b> Sample State and Sample County are illustrative. The patterns come from a real state analysis; names are withheld and job, wage and completion counts are rescaled. Percentages and relationships are unchanged.</p>
+<div class="panel" style="margin-top:28px;max-width:90ch"><h3>About this sample</h3>
+<p class="fineprint"><b>Illustrative.</b> Sample State, Sample County and the example college are illustrative. Patterns come from a real state analysis. Names are withheld, and job, wage and completion counts are rescaled; percentages and relationships are unchanged.</p>
+<p class="fineprint"><b>Scenarios.</b> Figures are estimates for 2035 under a main case. A slow-recovery stress test assumes only 75% of displaced work is replaced by new demand. Both are scenarios, not predictions.</p>
+<p class="fineprint"><b>Data.</b> BLS QCEW 2025 and OEWS May 2025 (occupations, industries and wages); BLS Employment Projections 2025–35 (growth, separations and entry education); Census LODES (commuting); IPEDS 2023–24 completions linked to occupations through the NCES CIP 2020–SOC 2018 crosswalk; state eligible training provider and apprenticeship lists; state population projections. Task data from O*NET. AI usage and task-exposure research inform the model.</p>
+<p class="fineprint"><b>Limits.</b> Robots and agentic AI beyond today's capabilities are not included. Military and most intelligence-agency jobs are outside standard employment data. Non-credit training is not counted in completions.</p>
+<p class="fineprint"><b>Not advice.</b> Reports are general information, not legal, financial, investment, employment or academic-program advice.</p>
+<p class="fineprint"><b>Data credits.</b> This page includes information from the O*NET 31.0 Database by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA), used under the CC BY 4.0 license. Horizon 2100 LLC has modified all or some of this information. USDOL/ETA has not approved, endorsed or tested these modifications. O*NET® is a trademark of USDOL/ETA. Anthropic Economic Index data are used under the CC BY 4.0 license. Task-exposure data from Eloundou et al. (2024), <i>Science</i>, used under the MIT License.</p></div>
 </div>
 </section>
 </main>
 
 <footer class="site-footer">
 <div class="wrap">
-<div>© 2026 Horizon 2100 LLC · Workforce 2100 · AI labor-market reports and services.<br>Workforce 2100 is independent and is not affiliated with or endorsed by any college, agency or employer named in its samples.<div class="footer-legal"><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+<div>© 2026 Horizon 2100 LLC · Workforce 2100 · AI labor-market reports and services.<br>Workforce 2100 is an independent service of Horizon 2100 LLC and is not affiliated with or endorsed by any college, agency or employer.<div class="footer-legal"><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
 <div><a href="https://workforce2100.org">Open research: workforce2100.org</a><br><a href="mailto:info@workforce2100.ai">info@workforce2100.ai</a></div>
 </div>
 </footer>
 <script>
 (function(){
-var C=[["County A",7.4],["County B",6.8],["County C",6.5],["County D",6.4],["County E",5.9],["County F",5.7],["Sample County",5.6],["County G",5.5],["County H",5.2],["County I",4.9],["County J",4.8]];
+var C=[["County A",7.7],["County B",6.8],["County C",6.6],["County D",6.4],["County E",6.3],["County F",6.2],["Sample County",6.1],["County G",6.1],["County H",6.0],["County I",5.8],["County J",5.4]];
 var h=document.getElementById('county-share');
 C.forEach(function(c){var d=document.createElement('div');d.className='bar-row';
-d.innerHTML='<span>'+c[0]+'</span><span class="bar-track"><span class="bar-fill" style="left:0;width:'+(c[1]/8*100)+'%;background:'+(c[1]>=6.4?'var(--red)':c[1]<=5.2?'var(--teal)':'#3E6A8E')+'"></span></span><span class="v">'+c[1].toFixed(1)+'%</span>';h.appendChild(d);});
+d.innerHTML='<span>'+c[0]+'</span><span class="bar-track"><span class="bar-fill" style="left:0;width:'+(c[1]/8*100)+'%;background:'+(c[1]>=6.4?'var(--red)':c[1]<=5.9?'var(--teal)':'#3E6A8E')+'"></span></span><span class="v">'+c[1].toFixed(1)+'%</span>';h.appendChild(d);});
 })();
 </script>
 <script src="assets/nav.js?v=1"></script>
